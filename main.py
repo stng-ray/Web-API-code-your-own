@@ -6,3 +6,5 @@ ravelry_things = response.json()
 ravelry_things
 
 print(ravelry_things)
+
+print("hello Hannah")
