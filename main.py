@@ -13,7 +13,7 @@ print("botos binted?")
 
 
 
-
+auth = ('birddb0y', 'Egg24head')
 import requests
-response = requests.get("https://api.ravelry.com/projects/search.json?query=puppycat")
+response = requests.get("https://api.ravelry.com/projects/search.json?query=puppycat", auth=auth)
 print(response.status_code)
