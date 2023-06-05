@@ -17,8 +17,12 @@ import random
 random_result_ix = random.randint(0, count-1)
 random_result = results[random_result_ix]
 
-print("here is an alignment:")
-print (random_result["name"])
+attribute = input("what attribute would you like? ")
+
+if attribute == "alignment":
+  print("here is an alignment:")
+  print (random_result["name"])
+
 
 
 #for key, value in data.items():
