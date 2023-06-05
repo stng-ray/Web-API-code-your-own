@@ -2,8 +2,8 @@ import requests
 
 URL = "https://www.dnd5eapi.co/api/"
 
-attribute = input("what attribute would you like?").lower().strip()
-allowed_attributes = ["alignments", "races"]
+attribute = input("what attribute would you like? ").lower().strip()
+allowed_attributes = ["ability-scores", "alignments", "backgrounds", "classes", "conditions", "damage-types", "equipment", "equipment-categories", "feats", "features", "languages", "magic-items", "magic-schools", "monsters", "proficiencies", "races", "rule-selections", "rules", "skills", "spells", "subclasses", "subraces", "traits", "weapon-properties"]
 while attribute not in allowed_attributes:
   attribute = input("Choose one of", allowed_attributes, ": ")
 
