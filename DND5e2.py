@@ -3,7 +3,13 @@ import requests
 URL = "https://www.dnd5eapi.co/api/"
 
 attribute = input("what attribute would you like? ").lower().strip()
-allowed_attributes = ["ability-scores", "alignments", "backgrounds", "classes", "conditions", "damage-types", "equipment", "equipment-categories", "feats", "features", "languages", "magic-items", "magic-schools", "monsters", "proficiencies", "races", "rule-selections", "rules", "skills", "spells", "subclasses", "subraces", "traits", "weapon-properties"]
+allowed_attributes = [
+  "ability-scores", "alignments", "backgrounds", "classes", "conditions",
+  "damage-types", "equipment", "equipment-categories", "feats", "features",
+  "languages", "magic-items", "magic-schools", "monsters", "proficiencies",
+  "races", "rule-selections", "rules", "skills", "spells", "subclasses",
+  "subraces", "traits", "weapon-properties"
+]
 while attribute not in allowed_attributes:
   print(allowed_attributes)
   attribute = input("Invalid input. Choose one of the above: ")
@@ -16,7 +22,6 @@ if response.status_code != 200:
   print("error")
 
 data = response.json()
-
 
 #print(data)
 count = data['count']

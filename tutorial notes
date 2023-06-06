@@ -1,6 +1,0 @@
-goal:
-make code that will first ask user for attribute input
-
-will then append the reuqested attribute onto the URL to get the correct database
-
-will then randomly spit back one from the API list

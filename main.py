@@ -2,6 +2,9 @@
 #import races
 import requests
 
+import DND5e2
+
+"""
 URL = "https://www.dnd5eapi.co/api/"
 
 
@@ -33,7 +36,7 @@ def get_class():
 
 while True:
   get_class()
-"""
+
 specify = input("What would you like randomized? Choices listed below")
 ability-scores
 alignments
@@ -61,5 +64,4 @@ traits
 weapon-properties
 print(specify)
 """
-
 
