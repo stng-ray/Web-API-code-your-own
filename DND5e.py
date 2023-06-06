@@ -19,6 +19,8 @@ random_result = results[random_result_ix]
 
 attribute = input("what attribute would you like? ")
 
+
+
 if attribute == "alignment":
   print("here is an alignment:")
   print (random_result["name"])
